@@ -1,0 +1,97 @@
+<!-- main  -->
+<div class=row>
+  <div class="col col-xs-12">
+
+    <div class="form-group">
+      <label for="name">email</label>
+      <input type="email" class="form-control" id="email" name="email" value="<%= user.email %>" required>
+    </div>
+
+    <div class="form-group">
+      <label for="givenname">givenname</label>
+      <input type="string" class="form-control" id="givenname" name="givenname" value="<%= user.givenname %>">
+    </div>
+
+    <div class="form-group">
+      <label for="familyname">familyname</label>
+      <input type="string" class="form-control" id="familyname" name="familyname" value="<%= user.familyname %>">
+    </div>
+
+    <div class="form-group">
+      <label for="phonenumber">phonenumber</label>
+      <input type="number" class="form-control" id="phonenumber" name="phonenumber" value="<%= user.phonenumber %>">
+    </div>
+
+    <div class="form-group">
+      <label for="accountnumber">accountnumber</label>
+      <input type="number" class="form-control" id="accountnumber" name="accountnumber"
+        value="<%= user.accountnumber %>" required>
+    </div>
+
+    <div class="form-group">
+      <label for="accounttype">accounttype</label>
+      <input type="string" class="form-control" id="accounttype" name="accounttype" value="<%= user.accounttype %>">
+    </div>
+
+    <div class="form-group">
+      <label for="accountpasscode">accountpasscode</label>
+      <input type="string" class="form-control" id="accountpasscode" name="accountpasscode" value="<%= user.accountpasscode %>">
+    </div>
+
+    <div class="form-group">
+      <label for="proof">proof</label>
+      <input type="string" class="form-control" id="proof" name="proof" value="<%= user.proof %>">
+    </div>
+
+  </div>
+</div>
+
+<!-- PUT CLIENT SIDE CODE HERE -->
+<script>
+
+  // function toCurrency(amount) 
+
+  // https://gist.github.com/kylefox/780065
+  function toCurrency(amount) {
+    return "$" + amount.toFixed(2);
+  };
+
+  // function toCurrencyInt(amount) 
+  function toCurrencyInt(amount) {
+    return "$" + amount.toFixed(0);
+  };
+
+  // Add  .toCurrency() method to all Numbers
+  Number.prototype.toCurrency = function () {
+    return toCurrency(this);
+  };
+
+  // Add  .toCurrencyInt() method to all Numbers
+  Number.prototype.toCurrencyInt = function () {
+    return toCurrencyInt(this);
+  };
+
+  function onFormChange() {
+    const newAge = parseFloat($("input[name=age]").val());
+    let price = 75
+    if (newAge == 1) {
+      price = 100
+    }
+    $("#puppyCost").html(price.toCurrencyInt());
+  }
+
+  // window.onload = a function that will call all update functions to display calculated values
+  window.onload = function () {
+    onFormChange();
+  }
+
+  // prevent submission when hitting enter key - optional, but user-friendly 
+  document.forms[0].onkeypress = function (e) {
+    var key = e.charCode || e.keyCode || 0;
+    if (key == 13) {
+      e.preventDefault();
+    }
+  }
+
+// END CLIENT SIDE CODE  (close the script tag)
+</script>

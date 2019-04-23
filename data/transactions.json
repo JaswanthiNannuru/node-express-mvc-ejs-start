@@ -1,0 +1,27 @@
+[
+  {
+    "_id": 1,
+    "transactionDate": "3/18/2019",
+    "transactionType": "checking",
+    "transactionAmount": "1100",
+    "transactionStatus": "Not Ok"
+    
+  },
+  {
+    
+  },
+  {
+    "_id": 2,
+    "transactionDate": "3/17/2019",
+    "transactionType": "checking",
+    "transactionAmount": "1200",
+    "transactionStatus": "ok"
+  },
+  {
+    "_id": 3,
+    "transactionDate": "3/16/2019",
+    "transactionType": "checking",
+    "transactionAmount": "1300",
+    "transactionStatus": "ok"
+  }
+]

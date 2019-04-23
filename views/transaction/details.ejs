@@ -1,0 +1,22 @@
+<br>
+<br>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+
+      <h2>Transaction details</h2>
+      <br>
+      <br> ID: <%=  transaction._id %>
+      <br> transactionDate: <%=transaction.transactionDate%>
+      <br> transactionType: <%=transaction.transactionType%>
+      <br> TransactionAmount: <%=transaction.transactionAmount%>
+      <br> TransactionStatus: <%=transaction.transactionStatus%>
+      <hr>
+
+      <form method="get" action="/transaction">
+        <input type="submit" value="Return to list" class="btn btn-caution" />
+      </form>
+
+    </div>
+  </div>
+</div>

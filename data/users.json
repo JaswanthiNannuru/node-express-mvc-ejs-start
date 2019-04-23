@@ -1,0 +1,36 @@
+[
+  {
+    "_id": 111,
+    "email": "s534803@nwmissouri.edu",
+    "givenname": "Jaswanthi",
+    "familyname": "Nannuru",
+    "phonenumber": 81367164,
+    "accountnumber": 6342765,
+    "accounttype": "checking",
+    "accountpasscode": 1234,
+      "proof": "pan"
+  },
+  {
+    "_id": 112,
+    "email": "s534597@nwmissouri.edu",
+    "givenname": "Rahul",
+    "familyname": "Mallampati",
+    "phonenumber": 982374689,
+    "accountnumber": 928782,
+    "accounttype": "savings",
+    "accountpasscode": 7856,
+      "proof": "Aadhar"
+  },
+  {
+    "_id": 132,
+    "email": "s534939@nwmissouri.edu",
+    "givenname": "Sunil",
+    "familyname": "Mundru",
+    "phonenumber": 81367164,
+    "accountnumber": 6342765,
+    "accounttype": "checking",
+    "accountpasscode": 9845,
+      "proof": "pan"
+  }
+  
+]

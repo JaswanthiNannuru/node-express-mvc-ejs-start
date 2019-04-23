@@ -1,0 +1,21 @@
+<br>
+<br>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+
+      <h2>account details</h2>
+      <br>
+      <br> ID: <%=  account._id %>
+      <br> accountKey: <%=account.accountKey%>
+      <br> description: <%=account.description%>
+      <br> unitPrice: <%=account.unitPrice%>
+      <hr>
+
+      <form method="get" action="/account">
+        <input type="submit" value="Return to list" class="btn btn-caution" />
+      </form>
+
+    </div>
+  </div>
+</div>

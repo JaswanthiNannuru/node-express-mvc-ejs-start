@@ -1,0 +1,30 @@
+<br>
+<br>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+
+      <h2>Confirm deletion of user</h2>
+      <br>
+      <br> ID: <%=  user._id %>
+      <br> email: <%=user.email%>
+      <br> givenname: <%=user.givenname%>
+      <br> familyname: <%=user.familyname%>
+      <br> phonenumber: <%=user.phonenumber%>
+      <br> accountnumber: <%=user.accountnumber%>
+      <br> accounttype: <%=user.accounttype%>
+      <br> accountpasscode: <%=user.accountpasscode%>
+      <br> proof: <%=user.proof%>
+      <hr>
+      
+      <form method="get" action="/user">
+        <input type="submit" value="Return to list" class="btn btn-caution" />
+      </form>
+      
+      <form method="POST" action="/user/delete/<%= user._id %>">
+        <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
+      </form>
+
+    </div>
+  </div>
+</div>
