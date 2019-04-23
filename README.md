@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Node Express MVC EJS Bootstrap Starter app
 
 A sample starter app using:
@@ -86,3 +87,6 @@ In your project folder, right-click and "Open PowerShell Here as Administrator".
 Open browser to the location displayed, e.g. http://localhost:8089/
 
 Changed!!!
+=======
+# node-express-mvc-ejs-start
+>>>>>>> 4d43f29f1386a1cc90dcadf00cc29db893a9fd36
